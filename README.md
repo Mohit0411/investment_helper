@@ -45,14 +45,14 @@ python3 backend/fetch_data.py data/market.json          # add ANTHROPIC_API_KEY 
 
 # app
 flutter test
-flutter run                                              # uses bundled sample data
-flutter run --dart-define=DATA_URL=https://raw.githubusercontent.com/USER/investment_helper/main/data/market.json
+flutter run                                              # fetches the daily data from this repo
+flutter run --dart-define=DATA_URL=                      # offline: bundled sample only
 ```
 
 To refresh the bundled sample: `cp data/market.json assets/sample_market.json`.
 
 ## GitHub setup
 
-1. Push this repo. The raw URL above only works without auth if the repo is **public** (or host `data/market.json` somewhere public).
-2. Optional: add `ANTHROPIC_API_KEY` under *Settings → Secrets → Actions*.
-3. Run the *Daily market data* workflow once manually from the Actions tab.
+The repo is public so the app can read `data/market.json` from raw.githubusercontent.com without a token.
+For the daily Claude note, add `ANTHROPIC_API_KEY` under *Settings → Secrets and variables → Actions*.
+The *Daily market data* workflow can also be run by hand from the Actions tab.

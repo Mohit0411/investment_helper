@@ -4,6 +4,7 @@ Usage: python backend/fetch_data.py [output_path]
 Set ANTHROPIC_API_KEY to also generate a plain-English summary with Claude.
 """
 
+import http.client
 import json
 import os
 import sys
@@ -26,7 +27,7 @@ def get_json(url, opener=None, headers=None, attempts=3):
         try:
             with (opener or urllib.request.build_opener()).open(req, timeout=60) as resp:
                 return json.load(resp)
-        except (TimeoutError, OSError):
+        except (TimeoutError, OSError, http.client.IncompleteRead):
             if attempt == attempts - 1:
                 raise
             time.sleep(2 * (attempt + 1))
