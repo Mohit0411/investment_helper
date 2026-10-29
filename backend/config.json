@@ -1,0 +1,73 @@
+{
+  "base_allocation": {
+    "conservative": {"equity": 30, "debt": 50, "gold": 15, "cash": 5},
+    "moderate": {"equity": 55, "debt": 25, "gold": 15, "cash": 5},
+    "aggressive": {"equity": 75, "debt": 10, "gold": 10, "cash": 5}
+  },
+  "equity_split": {
+    "conservative": {"index": 70, "flexi_cap": 30},
+    "moderate": {"index": 40, "flexi_cap": 30, "mid_cap": 20, "small_cap": 10},
+    "aggressive": {"index": 30, "flexi_cap": 25, "mid_cap": 25, "small_cap": 20}
+  },
+  "rules": {
+    "max_tilt": 10,
+    "nifty_pe_cheap": 19,
+    "nifty_pe_expensive": 23,
+    "valuation_tilt": 5,
+    "gold_trend_tilt": 3,
+    "vix_high": 20,
+    "rate_trend": "neutral",
+    "gilt_share_when_rates_falling": 50
+  },
+  "risk_free_rate": 6.5,
+  "funds": {
+    "index": [
+      {"code": 120716, "name": "UTI Nifty 50 Index Fund"},
+      {"code": 119063, "name": "HDFC Nifty 50 Index Fund"}
+    ],
+    "flexi_cap": [
+      {"code": 122639, "name": "Parag Parikh Flexi Cap Fund"},
+      {"code": 118955, "name": "HDFC Flexi Cap Fund"},
+      {"code": 120166, "name": "Kotak Flexi Cap Fund"}
+    ],
+    "mid_cap": [
+      {"code": 118989, "name": "HDFC Mid Cap Fund"},
+      {"code": 147622, "name": "Motilal Oswal Nifty Midcap 150 Index Fund"}
+    ],
+    "small_cap": [
+      {"code": 118778, "name": "Nippon India Small Cap Fund"},
+      {"code": 125497, "name": "SBI Small Cap Fund"}
+    ],
+    "elss": [
+      {"code": 135781, "name": "Mirae Asset ELSS Tax Saver Fund"},
+      {"code": 119242, "name": "DSP ELSS Tax Saver Fund"}
+    ],
+    "short_term_debt": [
+      {"code": 119016, "name": "HDFC Short Term Fund"},
+      {"code": 120754, "name": "ICICI Prudential Short Term Fund"},
+      {"code": 120510, "name": "Axis Short Term Fund"}
+    ],
+    "gilt": [
+      {"code": 120590, "name": "ICICI Prudential Gilt Fund"},
+      {"code": 119116, "name": "HDFC Gilt Fund"},
+      {"code": 119707, "name": "SBI Gilt Fund"}
+    ],
+    "gold": [
+      {"code": 119788, "name": "SBI Gold Fund"},
+      {"code": 119132, "name": "HDFC Gold ETF Fund of Fund"},
+      {"code": 118663, "name": "Nippon India Gold Savings Fund"}
+    ],
+    "liquid": [
+      {"code": 143269, "name": "Parag Parikh Liquid Fund"},
+      {"code": 119091, "name": "HDFC Liquid Fund"}
+    ]
+  },
+  "markets": [
+    {"id": "nifty", "name": "Nifty 50", "symbol": "^NSEI"},
+    {"id": "sensex", "name": "Sensex", "symbol": "^BSESN"},
+    {"id": "banknifty", "name": "Bank Nifty", "symbol": "^NSEBANK"},
+    {"id": "gold", "name": "Gold (GOLDBEES ETF)", "symbol": "GOLDBEES.NS"},
+    {"id": "silver", "name": "Silver (SILVERBEES ETF)", "symbol": "SILVERBEES.NS"},
+    {"id": "vix", "name": "India VIX", "symbol": "^INDIAVIX"}
+  ]
+}

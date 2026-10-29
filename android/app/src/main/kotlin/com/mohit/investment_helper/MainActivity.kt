@@ -1,0 +1,5 @@
+package com.mohit.investment_helper
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity : FlutterActivity()
