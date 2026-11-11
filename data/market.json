@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-10T18:45:15+00:00",
+ "generated_at": "2026-11-11T18:48:28+00:00",
  "markets": [
   {
    "id": "nifty",
@@ -7,7 +7,7 @@
    "price": 25044.65,
    "change_1d": 0.1,
    "change_1m": 12.7,
-   "change_1y": -2.1,
+   "change_1y": -2.5,
    "above_200dma": true,
    "spark": [
     23140.5,
@@ -48,7 +48,7 @@
    "price": 81106.65,
    "change_1d": 0.1,
    "change_1m": 13.3,
-   "change_1y": -2.9,
+   "change_1y": -3.3,
    "above_200dma": true,
    "spark": [
     73895.74,
@@ -89,7 +89,7 @@
    "price": 59741.25,
    "change_1d": 1.1,
    "change_1m": 9.6,
-   "change_1y": 3.1,
+   "change_1y": 2.8,
    "above_200dma": true,
    "spark": [
     55580.4,
@@ -127,13 +127,12 @@
   {
    "id": "gold",
    "name": "Gold (GOLDBEES ETF)",
-   "price": 116.86,
-   "change_1d": 0.6,
-   "change_1m": -3.4,
-   "change_1y": 14.9,
+   "price": 115.31,
+   "change_1d": -1.3,
+   "change_1m": -6.1,
+   "change_1y": 11.6,
    "above_200dma": false,
    "spark": [
-    124.43,
     121.17,
     120.64,
     121.59,
@@ -162,19 +161,19 @@
     116.41,
     118.13,
     116.2,
-    116.86
+    116.86,
+    115.31
    ]
   },
   {
    "id": "silver",
    "name": "Silver (SILVERBEES ETF)",
-   "price": 176.32,
-   "change_1d": 0.9,
-   "change_1m": -14.4,
-   "change_1y": 21.3,
+   "price": 176.84,
+   "change_1d": 0.3,
+   "change_1m": -15.7,
+   "change_1y": 19.4,
    "above_200dma": false,
    "spark": [
-    218.8,
     210.65,
     209.15,
     209.62,
@@ -203,7 +202,8 @@
     176.34,
     177.87,
     174.68,
-    176.32
+    176.32,
+    176.84
    ]
   },
   {
@@ -212,7 +212,7 @@
    "price": 17.42,
    "change_1d": -0.3,
    "change_1m": 14.0,
-   "change_1y": 41.6,
+   "change_1y": 39.5,
    "above_200dma": true,
    "spark": [
     12.16,
@@ -249,7 +249,7 @@
   }
  ],
  "signals": {
-  "nifty_pe": 20.48,
+  "nifty_pe": 20.59,
   "valuation": "fair",
   "gold_trend": "down",
   "vix": 17.42,
@@ -624,8 +624,8 @@
    {
     "code": 119091,
     "name": "HDFC Liquid Fund",
-    "nav": 5630.5102,
-    "nav_date": "2026-11-09",
+    "nav": 5631.4987,
+    "nav_date": "2026-11-10",
     "ret_1y": 6.5,
     "ret_3y": 6.9,
     "ret_5y": 6.4,
@@ -633,7 +633,7 @@
     "rolling_1y_min": 6.2,
     "volatility": 0.2,
     "max_drawdown": -0.0,
-    "sharpe": 1.96,
+    "sharpe": 2.0,
     "score": 100
    },
    {
